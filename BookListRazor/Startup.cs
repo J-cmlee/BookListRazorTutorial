@@ -27,6 +27,7 @@ namespace BookListRazor
         {
             //Service to connect to database
             services.AddDbContext<ApplicationDbContext>(option => option.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            
             services.AddRazorPages().AddRazorRuntimeCompilation();
         }
 
